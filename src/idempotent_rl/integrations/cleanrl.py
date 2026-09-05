@@ -15,3 +15,4 @@ class CleanRLReplayBufferInplaceHook:
             rb_states, rb_actions, rb_rewards, rb_next_states, rb_dones,
             td_errors, capacity=self.capacity
         )
+

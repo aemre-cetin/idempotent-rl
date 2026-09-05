@@ -177,3 +177,4 @@ def compact_replay_buffer_inplace(states, actions, rewards, next_states, dones, 
         S_DIM=S_DIM,
         A_DIM=A_DIM
     )
+

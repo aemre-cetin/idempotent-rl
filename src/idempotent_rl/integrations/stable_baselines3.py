@@ -16,3 +16,4 @@ class SB3PrioritizedReplayBufferInplaceHook:
             buffer_next_observations, buffer_dones,
             priorities, capacity=self.capacity
         )
+

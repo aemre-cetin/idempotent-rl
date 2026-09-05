@@ -61,3 +61,4 @@ class InplacePERCompactor:
 
     def __call__(self, *args, **kwargs):
         return self.compact(*args, **kwargs)
+

@@ -101,3 +101,4 @@ def benchmark_rl_compaction():
 
 if __name__ == "__main__":
     benchmark_rl_compaction()
+
