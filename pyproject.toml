@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "idempotent-rl"
+version = "0.1.0"
+description = "Zero-Copy In-Place Multi-Tensor Replay Buffer Compactor for Deep Reinforcement Learning"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Dr. A. Emre ÇETİN", email = "aemre.cetin@gmail.com" }
+]
+keywords = [
+    "reinforcement-learning", "replay-buffer", "per", "cleanrl", "stable-baselines3", 
+    "triton", "cuda", "zero-copy", "in-situ", "idempotent", "robotics", "isaac-gym"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+dependencies = [
+    "torch>=2.0.0",
+    "triton>=2.1.0; platform_system != 'Windows'",
+    "triton-windows>=3.0.0; platform_system == 'Windows'"
+]
+
+[project.urls]
+Homepage = "https://github.com/aemre-cetin/idempotent-rl"
+Repository = "https://github.com/aemre-cetin/idempotent-rl"
+Documentation = "https://github.com/aemre-cetin/idempotent-rl#readme"
+
+[tool.setuptools.packages.find]
+where = ["src"]
